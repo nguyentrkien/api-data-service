@@ -13,6 +13,8 @@ const DataRetentionRoute = require("./DataRetention");
 const CalculateJobCollectionsRoute = require("./CalculateJobCollections");
 const CalculateRoute = require("./Calculate");
 const SendEmailRoute = require("./SendEmail");
+const SystemRoute = require("./System")
+const GetHeapStatisticsRoute = require("./GetHeapStatistics")
 const AuthRoute = require("./Auth");
 const User = require("./User")
 // const TypeKPIRoute = require("./TypeKPI");
@@ -36,6 +38,8 @@ function route(app) {
   app.use("/Backup", BackupRoute);
   app.use("/DataRetentions", DataRetentionRoute);
   app.use("/CalculateJobCollections", CalculateJobCollectionsRoute);
+  app.use("/os", SystemRoute);
+  app.use("/v8", GetHeapStatisticsRoute)
 }
 
 module.exports = route;

@@ -5,7 +5,7 @@ const GOOGLE_MAILER_CLIENT_ID =
   "251932485034-phoeakkguu3vgrquqtjpnlurh4p7t3ok.apps.googleusercontent.com";
 const GOOGLE_MAILER_CLIENT_SECRET = "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";
 const GOOGLE_MAILER_REFRESH_TOKEN =
-  "1//04sC8dq03P8sSCgYIARAAGAQSNwF-L9IrBdysROhZJLP28_GfuNoxh6JAPQn2Kz5AaibSga0T9VkG3qBbJ90pOnJJK641-GY_1X0";
+  "1//04PBtP0I5NQdQCgYIARAAGAQSNwF-L9IrXC3KX5ZNtDdYlw88e8Iy7l5P8utcutXhs3uprOG8jD8Y54pxmEZSn78zkwExrWuyvQQ";
 const ADMIN_EMAIL_ADDRESS = "dongoccan9b@gmail.com";
 
 const myOAuth2Client = new OAuth2Client(

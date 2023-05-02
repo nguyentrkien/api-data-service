@@ -60,6 +60,27 @@ class UserController {
       });
     }
   };
+  addKPI = async function (req, res) {
+    try {
+      await User.updateOne({ _id: req.body._id}, { $addToSet: {kpis: req.body.kpi}})
+      res.status(HttpRequestCode.OK).json(req.body._id);
+    } catch (err) {
+      res.status(HttpRequestCode.INTERVAL_SERVER_ERROR).json({
+        message: err.message.toString(),
+      });
+    }
+  };
+
+  deleteKPI = async function (req, res) {
+    try {
+      await User.updateOne({ _id: req.body._id}, { $pull: { kpis: {id: req.body.id}}})
+      res.status(HttpRequestCode.OK).json(req.body._id);
+    } catch (err) {
+      res.status(HttpRequestCode.INTERVAL_SERVER_ERROR).json({
+        message: err.message.toString(),
+      });
+    }
+  };
 
 }
 

@@ -9,5 +9,7 @@ Router.post("/updateUser", UserController.updateUser);
 Router.post("/addWidget", UserController.addWidget);
 Router.post("/deleteWidget", UserController.deleteWidget);
 Router.post("/deleteDashboard", UserController.deleteDashboard);
+Router.post("/addKPI", UserController.addKPI);
+Router.post("/deleteKPI", UserController.deleteKPI);
    
 module.exports = Router;

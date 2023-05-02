@@ -136,6 +136,22 @@ module.exports = mongoose.model(
           type: String  
         }
       }
-    ]
+    ],
+    kpis: [
+      {
+        id: {
+          type: String
+        },
+        name: {
+          type: String
+        },
+        formula:{
+          type: Object
+        },
+        date: {
+          type: String
+        }
+      }
+    ],
   })
 );
